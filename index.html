@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <title>Potency Calculator</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div>
+            <h1>Edible Potency Calculator</h1>
+            <p>Recommended to make a small batch with no cannabinoids and weight one unit for accurate doseing.</p>
+            <p>Enter weight of product, potency of desired cannabinoid in the oil, and amount you wish to make in you batch.</p>
+        </div>
+        <div>
+          <form>
+            <label for="productWeight">Finished Product Weight (g): </label>
+            <input
+              type="number"
+              id="productWeight"
+              name="productWeight"
+              step="0.01"
+              required
+            />
+            <br />
+            <label for="oilPotency">Oil Potency (%): </label>
+            <input
+              type="number"
+              id="oilPotency"
+              name="oilPotency"
+              step="0.01"
+              required
+            />
+            <br />
+            <label for="batchSize">Batch Size: </label>
+            <input
+              type="number"
+              id="batchSize"
+              name="batchSize"
+              step="0.01"
+              required
+            />
+            <br />
+            <button type="button" id="calculate">Calculate</button>
+          </form>
+          <h2>Amount of oil needed: <span id="result"></span></h2>
+        </div>
+      </section>
+    </main>
+
+    <script type="text/javascript" href="script.js"></script>
+  </body>
+</html>
